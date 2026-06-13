@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 262 83% 96%;
+    --accent-foreground: 262 83% 30%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 83% 58%;
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 8% 7%;
+    --card-foreground: 0 0% 98%;
+    --primary: 262 83% 65%;
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 262 50% 20%;
+    --accent-foreground: 262 83% 85%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 262 83% 65%;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; font-feature-settings: "cv11", "ss01"; }
+}
+
+.prose-maestro {
+  @apply text-foreground leading-relaxed;
+}
+.prose-maestro h1 { @apply text-2xl font-bold mt-6 mb-3; }
+.prose-maestro h2 { @apply text-xl font-semibold mt-5 mb-2; }
+.prose-maestro h3 { @apply text-lg font-semibold mt-4 mb-2; }
+.prose-maestro p { @apply my-3; }
+.prose-maestro ul { @apply list-disc pl-6 my-3 space-y-1; }
+.prose-maestro ol { @apply list-decimal pl-6 my-3 space-y-1; }
+.prose-maestro code { @apply bg-muted px-1.5 py-0.5 rounded text-sm; }
+.prose-maestro pre { @apply bg-muted p-4 rounded-lg overflow-x-auto my-4 text-sm; }
+.prose-maestro pre code { @apply bg-transparent p-0; }
+.prose-maestro a { @apply text-primary underline underline-offset-2 hover:opacity-80; }
+.prose-maestro strong { @apply font-semibold; }
+.prose-maestro blockquote { @apply border-l-4 border-primary/40 pl-4 italic my-4; }

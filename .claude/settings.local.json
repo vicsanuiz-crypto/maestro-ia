@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-Process -Name node -ErrorAction SilentlyContinue | Select-Object Id, ProcessName, StartTime, @{N='Mem\\(MB\\)';E={[math]::Round\\($_.WorkingSet64/1MB,1\\)}}; Write-Output \"---port 3000---\"; Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object LocalPort, State, OwningProcess)",
+      "PowerShell(cd \"C:\\\\Users\\\\Asus\\\\.claude\\\\Proyectos\\\\Maestro-IA\"; Write-Output \"=== matando node existentes ===\"; Get-Process node -ErrorAction SilentlyContinue | Stop-Process -Force; Start-Sleep -Seconds 2; Write-Output \"=== ejecutando launcher \\(build + start + open\\) ===\"; powershell -NoProfile -ExecutionPolicy Bypass -File \"scripts\\\\launcher.ps1\" 2>&1)"
+    ]
+  }
+}
