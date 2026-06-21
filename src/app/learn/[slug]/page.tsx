@@ -6,6 +6,7 @@ import { Markdown } from "@/components/Markdown";
 import LessonComplete from "./LessonComplete";
 import LessonChatMount from "./LessonChatMount";
 import { GraduationCap, CheckCircle2, Circle } from "lucide-react";
+import { levelMeta } from "@/lib/levels";
 
 export const dynamic = "force-dynamic";
 
@@ -22,7 +23,7 @@ export default async function PathPage({ params }: { params: Promise<{ slug: str
     <div className="max-w-4xl mx-auto px-8 py-10">
       <header className="mb-8 space-y-2">
         <div className="inline-flex items-center gap-2 text-xs text-primary bg-primary/10 px-3 py-1 rounded-full">
-          <GraduationCap className="h-3 w-3" /> {path[0].level}
+          <GraduationCap className="h-3 w-3" /> {levelMeta(path[0].level).emoji} {levelMeta(path[0].level).label}
         </div>
         <h1 className="text-3xl font-bold">{path[0].title}</h1>
         <p className="text-muted-foreground">{path[0].description}</p>

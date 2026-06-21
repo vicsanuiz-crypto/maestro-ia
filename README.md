@@ -7,7 +7,7 @@ Tu tutor experto que se mantiene obsesivamente actualizado en IA y te enseña a 
 - **Briefing diario** — Claude Opus 4.7 resume las novedades del día desde 11 fuentes top.
 - **Feed agregado** — Anthropic, OpenAI, DeepMind, HuggingFace, arXiv (cs.AI/CL/LG), Hacker News, MIT, The Verge, TechCrunch.
 - **Chat con el Maestro** — streaming, con contexto del feed inyectado en cada conversación. Prompt caching activo.
-- **Rutas de aprendizaje** — currículo progresivo (Fundamentos LLM → Prompt Engineering → Agentes → RAG → MCP).
+- **Rutas de aprendizaje** — currículo progresivo en 4 niveles: 🐣 Para Dummies (desde cero, sin tecnicismos) → 🌱 Principiante (Fundamentos LLM, Prompt Engineering) → ⚙️ Intermedio (Agentes, RAG) → 🚀 Avanzado (MCP, orquestación).
 - **Progreso por lección** — marca lo aprendido, sigue tu avance.
 
 ## Stack
